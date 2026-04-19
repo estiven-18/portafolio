@@ -25,7 +25,7 @@ const CardProyects = ({
           ))}
         </div>
 
-        <h2 className="mt-4 text-xl font-semibold text-white/90">{title}</h2>
+        <h2 className="mt-4 text-xl font-semibold text-white">{title}</h2>
 
         <p className="mt-2 text-sm text-white/75">{description}</p>
 
@@ -33,7 +33,7 @@ const CardProyects = ({
           href={liveUrl}
           target="_blank"
           rel="noreferrer"
-          className="mt-4 inline-flex w-fit rounded-lg border border-gray-300 bg-white/30 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/25"
+          className="mt-4 inline-flex w-fit rounded-lg border border-gray-300 bg-white/30 px-4 py-2 text-sm font-medium text-white transition hover:bg-lime-400 hover:text-black"
         >
           Go Live
         </a>

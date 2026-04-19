@@ -8,11 +8,24 @@ import Proyects from "./Components/Layout/Proyects";
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Hero />
-      <About />
-      <Skills />
-      <Proyects />
+      <div id="PantallaPrincipal">
+        <Nav />
+        <Hero />
+      </div>
+      <hr className="mx-100" />
+      <div id="PantallaAbout" className="">
+        <About />
+      </div>
+      <hr className="mx-100" />
+      <div id="PantallaSkills">
+        <Skills />
+      </div>
+      <hr className="mx-100" />
+      <div id="PantallaProyects">
+        <Proyects />
+      </div>
+
+      
     </div>
   );
 }

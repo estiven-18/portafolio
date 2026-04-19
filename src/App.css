@@ -128,3 +128,31 @@
     @apply font-sans;
     }
 }
+
+#PantallaPrincipal {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  width: 100%;
+}
+#PantallaAbout {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  width: 100%;
+}#PantallaSkills {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  width: 100%;
+}#PantallaProyects {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+
+
+
