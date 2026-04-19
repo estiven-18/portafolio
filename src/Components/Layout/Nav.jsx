@@ -14,9 +14,7 @@ const Nav = () => {
         <li>
           <a href="/projects" className="pb-1 transition-colors hover:text-lime-400"><b>Proyectos</b></a>
         </li>
-        <li>
-          <a href="/contact" className="pb-1 transition-colors hover:text-lime-400"><b>Contacto</b></a>
-        </li>
+        
       </ul>
     </nav>
   );

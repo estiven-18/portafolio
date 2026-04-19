@@ -1,7 +1,7 @@
 const CardSkills = ({ title, skills = [] }) => {
   return (
-    <div className="mt-8 flex justify-center">
-      <div className="h-70 w-60 rounded-xl m-6 border border-lime-400  bg-white/10 backdrop-blur-sm">
+    <div className="mt-8 flex justify-center ">
+      <div className="h-70 w-60 rounded-xl m-6 border-white/6 bg-white/10 backdrop-blur-sm hover:border-lime-400 border-2">
         <h1 className="mt-6 mx-6 text-3xl text-white/75">
           <b>{title}</b>
         </h1>

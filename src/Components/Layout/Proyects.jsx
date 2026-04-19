@@ -3,7 +3,7 @@ const Proyects = () => {
   const projects = [
     {
       preview:
-        "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80",
+        "src/Components/img/cardmatch.png",
       title: "CardMatch",
       description:
         "Juego de memoria donde los jugadores deben encontrar pares de cartas iguales. Desarrollado con PHP y bootstrap CSS.",
@@ -12,7 +12,7 @@ const Proyects = () => {
     },
     {
       preview:
-        "https://images.unsplash.com/photo-1523475472560-d2df97ec485c?auto=format&fit=crop&w=900&q=80",
+        "src/Components/img/pigmento.png",
       title: "Pigmento Salon de Belleza",
       description:
         "Landing page para un salon de belleza hecha en wordpress.",

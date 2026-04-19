@@ -6,12 +6,12 @@ const CardProyects = ({
   liveUrl = "#",
 }) => {
   return (
-    <div className="w-full">
-      <div className="w-full rounded-xl border border-gray-400 bg-white/10 p-4 backdrop-blur-sm">
+    <div className="inline-block">
+      <div className="inline-block rounded-xl border-0 border-white/5 bg-white/10 p-4 backdrop-blur-sm hover:border-lime-400 border-2">
         <img
           src={preview}
           alt="Vista previa del proyecto"
-          className="h-48 w-full rounded-lg object-cover"
+          className="max-w-full max-h-[400px] rounded-lg object-contain mx-auto block"
         />
 
         <div className="mt-3 flex flex-wrap gap-2">
