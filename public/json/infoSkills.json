@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Frontend",
+    "skills": ["HTML", "CSS", "Tailwind", "React", "Bootstrap", "JavaScript"]
+  },
+  {
+    "title": "Backend",
+    "skills": ["Node.js", "Express", "APIs REST", "ASP.NET", "C#"]
+  },
+  {
+    "title": "Base de datos",
+    "skills": ["MySQL", "MongoDB", "SQL Server"]
+  }
+]

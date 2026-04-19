@@ -1,26 +1,17 @@
 import CardProyects from "../Pages/CardProyects";
+import { useEffect, useState } from "react";
+
 const Proyects = () => {
-  const projects = [
-    {
-      preview:
-        "src/Components/img/cardmatch.png",
-      title: "CardMatch",
-      description:
-        "Juego de memoria donde los jugadores deben encontrar pares de cartas iguales. Desarrollado con PHP y bootstrap CSS.",
-      technologies: ["PHP", "MySQL", "Bootstrap"],
-      liveUrl: "https://cardmatch.adsocartago.com",
-    },
-    {
-      preview:
-        "src/Components/img/pigmento.png",
-      title: "Pigmento Salon de Belleza",
-      description:
-        "Landing page para un salon de belleza hecha en wordpress.",
-      technologies: ["WordPress"],
-      liveUrl: "https://example.com/panel",
-    },
-    
-  ];
+  const [info, setInfo] = useState([]);
+
+  useEffect(() => {
+    fetch("/json/proyects.json")
+      .then((res) => res.json())
+      .then((data) => setInfo(data));
+  }, []);
+
+  
+  
 
   return (
     <div className="m-18">
@@ -31,7 +22,7 @@ const Proyects = () => {
         Algunos de mis proyectos destacados.
       </p>
       <div className="mx-auto mt-8 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
-        {projects.map((project) => (
+        {info.map((project) => (
           <CardProyects
             key={project.title}
             preview={project.preview}

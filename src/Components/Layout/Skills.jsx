@@ -1,5 +1,15 @@
 import CardSkills from "../Pages/CardSkills";
+import { useEffect, useState } from "react";
+
 const Skills = () => {
+  const [info, setInfo] = useState([]);
+
+  useEffect(() => {
+    fetch("/json/infoSkills.json")
+      .then((res) => res.json())
+      .then((data) => setInfo(data));
+  }, []);
+
   return (
     <div className="m-18">
       <h1 className="flex justify-center text-lime-400 text-5xl">
@@ -9,9 +19,9 @@ const Skills = () => {
         Desarrollo web, APIs y backend.
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center">
-        <CardSkills title="Frontend" skills={["HTML", "CSS", "Tailwind", "React","Bootstrap","JavaScript"]} />
-        <CardSkills title="Backend" skills={["Node.js", "Express", "APIs REST", "ASP.NET" ,"C#"]} />
-        <CardSkills title="Base de datos" skills={["MySQL", "MongoDB", "SQL Server"]} />
+        {info.map((card) => (
+          <CardSkills key={card.title} title={card.title} skills={card.skills} />
+        ))}
       </div>
 
     </div>

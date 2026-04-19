@@ -1,14 +1,15 @@
 import ButtonHero from "../Pages/ButtonHero";
-
-const infoButton = [
-  {
-    id: 1,
-    title: "Contactame",
-    href: "#contact",
-  },
-];
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [info, setInfo] = useState([]);
+
+  useEffect(() => {
+    fetch("/json/infoButton.json")
+      .then((res) => res.json())
+      .then((data) => setInfo(data));
+  }, []);
+
   return (
     <div className="m-18">
       <p className="text-xl p-2 text-white/75 md:text-2xl "><b>¡Hola Soy Estiven!</b></p>
@@ -22,7 +23,7 @@ const Hero = () => {
         <br /> y tambien en la construccion de interfaces de usuario atractivas.
       </h2>
 
-      {infoButton.map((button) => (
+      {info.map((button) => (
         <ButtonHero key={button.id} text={button.title} href={button.href} />
       ))}
 
