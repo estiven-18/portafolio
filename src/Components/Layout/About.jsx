@@ -17,10 +17,10 @@ const About = () => {
       </h1>
       <p className="mt-4 text-center text-lg text-white/75 p">
         Soy programador Full-Stack. Actualmente soy aprendiz del SENA en
-        análisis y desarrollo de software en Colombia. Me apasiona crear
+        análisis y desarrollo de software. Me apasiona crear
         aplicaciones web modernas, escalables y eficientes. Siempre busco
         aprender nuevas tecnologías y mejorar mis habilidades. Disfruto
-        colaborar en proyectos, explorar nuevas herramientas y contribuir al
+        colaborar en proyectos, explorar nuevas herramientas y me gustaria contribuir al
         crecimiento del software colombiano.
       </p>
       <h1 className="flex justify-center text-2xl mt-8 text-lime-400">
